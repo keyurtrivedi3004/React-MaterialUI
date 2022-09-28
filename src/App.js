@@ -1,5 +1,10 @@
 import "./App.css";
-import MuiAutocomplete from "./Components/MuiAutocomplete";
+// import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import MuiDatePicker from "./Components/MuiDatePicker";
+// import MuiTable from "./Components/MuiTable";
+// import MuiAutocomplete from "./Components/MuiAutocomplete";
 // import MuiRatting from "./Components/MuiRatting";
 // import MuiSwitch from "./Components/MuiSwitch";
 // import MuiCheckBOx from "./Components/MuiCheckbox";
@@ -11,17 +16,21 @@ import MuiAutocomplete from "./Components/MuiAutocomplete";
 
 function App() {
   return (
-    <div className="App">
-      {/* <MuiTypography /> */}
-      {/* <MuiButton /> */}
-      {/* <MuiTextFiels /> */}
-      {/* <MuiSelct /> */}
-      {/* <MuiRadioButton /> */}
-      {/* <MuiCheckBOx /> */}
-      {/* <MuiSwitch /> */}
-      {/* <MuiRatting /> */}
-      <MuiAutocomplete />
-    </div>
+    <LocalizationProvider dateAdapter={AdapterDayjs}>
+      <div className="App">
+        {/* <MuiTypography /> */}
+        {/* <MuiButton /> */}
+        {/* <MuiTextFiels /> */}
+        {/* <MuiSelct /> */}
+        {/* <MuiRadioButton /> */}
+        {/* <MuiCheckBOx /> */}
+        {/* <MuiSwitch /> */}
+        {/* <MuiRatting /> */}
+        {/* <MuiAutocomplete /> */}
+        {/* <MuiTable /> */}
+        <MuiDatePicker />
+      </div>
+    </LocalizationProvider>
   );
 }
 
