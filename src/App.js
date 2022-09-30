@@ -2,8 +2,9 @@ import "./App.css";
 // import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import MuiNotification from "./Components/MuiNotification";
 // import MuiDatePicker from "./Components/MuiDatePicker";
-import MuiModel from "./Components/MuiModel";
+// import MuiModel from "./Components/MuiModel";
 // import MuiTable from "./Components/MuiTable";
 // import MuiAutocomplete from "./Components/MuiAutocomplete";
 // import MuiRatting from "./Components/MuiRatting";
@@ -30,7 +31,8 @@ function App() {
         {/* <MuiAutocomplete /> */}
         {/* <MuiTable /> */}
         {/* <MuiDatePicker /> */}
-        <MuiModel />
+        {/* <MuiModel /> */}
+        <MuiNotification />
       </div>
     </LocalizationProvider>
   );
