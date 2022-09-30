@@ -51,7 +51,7 @@ const MuiNotification = () => {
         <Placeholder.Paragraph style={{ width: 320 }} rows={3} />
       </Notification>
       <br />
-      <Notification closable type="error" header="Error">
+      <Notification closable type="info" header="info">
         <h3>Closable Notification</h3>
         <Placeholder.Paragraph style={{ width: 320 }} rows={3} />
       </Notification>
@@ -89,7 +89,6 @@ const MuiNotification = () => {
         <Button onClick={() => toaster.remove()}>Remove</Button>
         <Button onClick={() => toaster.clear()}>Clear</Button>
       </ButtonToolbar>
-      );
     </>
   );
 };
